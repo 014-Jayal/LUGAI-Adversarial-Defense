@@ -1,0 +1,32 @@
+# Virtual Environment
+venv/
+.env
+
+# --- EXCLUDE THESE ---
+# Large processed data files
+data/processed/*.pt
+
+# Specific folder
+Research Papers/
+
+# Specific file
+LUGAI.docx
+# --- END EXCLUSIONS ---
+
+# Raw data (usually don't commit datasets)
+data/raw/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
