@@ -4,9 +4,9 @@ LUGAI — Latent Uncertainty Guided Adversary Intervention
 
 Project Group No: 30  
 Scholars:  
-- **Jayal Shah** — [LinkedIn]([https://www.linkedin.com/in/jayal-shah/](https://www.linkedin.com/in/jayal-shah04/))  
-- **Sakshi Makwana** — [LinkedIn]([https://www.linkedin.com/in/sakshi-makwana-04b0181b4/](https://www.linkedin.com/in/sakshii125/))  
-- **Mayank Jangid** — [LinkedIn]([https://www.linkedin.com/in/mayank-jangid-34395b279/](https://www.linkedin.com/in/mayank-jangid-0a5207359/))
+- **Jayal Shah** — [LinkedIn](https://www.linkedin.com/in/jayal-shah04/)  
+- **Sakshi Makwana** — [LinkedIn](https://www.linkedin.com/in/sakshii125/)  
+- **Mayank Jangid** — [LinkedIn](https://www.linkedin.com/in/mayank-jangid-0a5207359/)
 
 Supervisor: **Dr. Sanjay B. Sonar**
 
