@@ -14,7 +14,7 @@ Demo
 ----
 Below is a screenshot of the **LUGAI Streamlit application**, which demonstrates detection and purification of adversarial inputs in real time.
 
-![LUGAI Demo Screenshot]([[results/figures/demo_screenshot.png](https://github.com/014-Jayal/LUGAI-Adversarial-Defense/issues/1#issue-3553907647)](https://private-user-images.githubusercontent.com/110172420/505724589-edca659e-b48c-4af0-b8cf-e882f5bdfff0.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE0ODQ1NDEsIm5iZiI6MTc2MTQ4NDI0MSwicGF0aCI6Ii8xMTAxNzI0MjAvNTA1NzI0NTg5LWVkY2E2NTllLWI0OGMtNGFmMC1iOGNmLWU4ODJmNWJkZmZmMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAyNlQxMzEwNDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04MmRhOTZiYTI1Y2M3MmUwOTIxZjg5ZDVlYTYwYWI2ZmUyNjFkOTUwNWZiZGVmYjdlZDU1Zjc0MDkyMmVjZTExJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.SBG2bB2IR7cKBuedtGdSjqT7AkD2sNLl6f5ZW_qhK80))
+![LUGAI Demo Screenshot](results/figures/image.png)
 
 Overview
 --------
