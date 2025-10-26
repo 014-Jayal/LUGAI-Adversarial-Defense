@@ -6,14 +6,15 @@ Project Group No: 30
 Scholars:  
 - **Jayal Shah** — [LinkedIn](https://www.linkedin.com/in/jayal-shah/)  
 - **Sakshi Makwana** — [LinkedIn](https://www.linkedin.com/in/sakshi-makwana-04b0181b4/)  
-- **Mayank Jangid** — [LinkedIn](https://www.linkedin.com/in/mayank-jangid-34395b279/)  
-Supervisor: Dr. Sanjay B. Sonar
+- **Mayank Jangid** — [LinkedIn](https://www.linkedin.com/in/mayank-jangid-34395b279/)
+
+Supervisor: **Dr. Sanjay B. Sonar**
 
 Demo
 ----
 Below is a screenshot of the **LUGAI Streamlit application**, which demonstrates detection and purification of adversarial inputs in real time.
 
-![LUGAI Demo Screenshot](results/figures/demo_screenshot.png)
+![LUGAI Demo Screenshot]([results/figures/demo_screenshot.png](https://github.com/014-Jayal/LUGAI-Adversarial-Defense/issues/1#issue-3553907647))
 
 Overview
 --------
