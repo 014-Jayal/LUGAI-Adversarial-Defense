@@ -1,56 +1,148 @@
-# 🛡️ LUGAI: Latent Uncertainty Guided Adversary Intervention
 
-**Project Group No: 30**
-**Scholars: Jayal Shah, Sakshi Makwana, Mayank Jangid**
+LUGAI — Latent Uncertainty Guided Adversary Intervention
+=======================================================
 
-This repository contains the code for LUGAI, a self-healing, two-stage framework to defend deep neural networks against adversarial attacks. The system is designed to detect and correct adversarial inputs in real-time, restoring model accuracy and resilience.
+Project Group No: 30  
+Scholars:  
+- **Jayal Shah** — [LinkedIn](https://www.linkedin.com/in/jayal-shah/)  
+- **Sakshi Makwana** — [LinkedIn](https://www.linkedin.com/in/sakshi-makwana-04b0181b4/)  
+- **Mayank Jangid** — [LinkedIn](https://www.linkedin.com/in/mayank-jangid-34395b279/)  
+Supervisor: Dr. Sanjay B. Sonar
 
-## Demo
-![Streamlit Demo](httpsDE_PROJECT/blob/main/demo.gif) 
-*(You can record a GIF of your `app.py` in action and replace this link!)*
+Demo
+----
+Below is a screenshot of the **LUGAI Streamlit application**, which demonstrates detection and purification of adversarial inputs in real time.
 
-## 1. Project Abstract
-[cite_start]Deep neural networks, despite their strengths, remain highly susceptible to adversarial perturbations[cite: 6]. [cite_start]Such vulnerabilities pose serious risks in safety-critical domains like autonomous driving[cite: 7]. LUGAI introduces a self-healing, two-stage framework to combat this. [cite_start]In the first stage, it employs a detection module to identify anomalous inputs by examining latent uncertainty and reconstruction deviations[cite: 11]. [cite_start]The second stage uses an optimized Denoising Autoencoder to restore input integrity, effectively mitigating adversarial noise[cite: 12]. Experiments on the MNIST dataset demonstrate that LUGAI significantly improves model resilience, recovering accuracy from 22.97% back to 93.02%.
+![LUGAI Demo Screenshot](results/figures/demo_screenshot.png)
 
-## 2. Final Results
-Our framework was tested against the Fast Gradient Sign Method (FGSM) attack. The Denoising Autoencoder (DAE) successfully "healed" the attacked images, resulting in a **91.80% accuracy recovery rate**.
+Overview
+--------
+LUGAI is a two-stage, self-healing framework designed to defend deep neural networks against adversarial inputs. The framework detects anomalous inputs using latent uncertainty and reconstruction deviation, then restores input integrity using a denoising autoencoder prior to classification. The implementation is in Python and PyTorch, and uses Torchattacks for adversarial example generation and Streamlit for an interactive demonstration.
 
-| Metric | Accuracy |
-| :--- | :--- |
-| **Clean Model Accuracy** | `99.28%` |
-| **Attacked (FGSM) Accuracy** | `22.97%` |
-| **Purified (LUGAI) Accuracy** | `93.02%` |
+Status (completed so far)
+-------------------------
+- Project repository initialized and organized.
+- Virtual environment configured and dependencies installed.
+- MNIST dataset downloaded and preprocessed into Torch `.pt` tensors.
+- Baseline CNN implemented and trained (saved to `models/cnn_classifier.pth`).
+- Adversarial attacks implemented and evaluated: FGSM, PGD, DeepFool.
+- Visualization utilities implemented to compare clean, attacked, and purified images.
+- Streamlit app integrated for real-time adversarial detection and purification.
 
-### Visual Proof of "Self-Healing"
-The DAE successfully reconstructs the clean digit from the adversarial noise, allowing the classifier to make the correct prediction.
+Results (example)
+-----------------
+Representative results on the MNIST test set:
 
-![Purification Visualization](results/figures/purification_visualization.png)
+- Clean Model Accuracy: 99.28%
+- Attacked (FGSM, eps=0.3) Accuracy: 22.97%
+- Purified (LUGAI) Accuracy: 93.02%
+- Accuracy Recovery Rate: 91.80%
 
-## 3. How to Run
-This project uses a simple, flat structure. All scripts are run from the project's root directory.
+Quickstart
+----------
+All scripts are located in the project root directory. Run commands from the root folder.
 
-### Step 1: Setup
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/your-username/LUGAI_Project.git](https://github.com/your-username/LUGAI_Project.git)
-    cd LUGAI_Project
-    ```
-2.  **Create and activate a virtual environment:**
-    ```bash
-    # Windows
-    python -m venv venv
-    .\venv\Scripts\activate
-    
-    # macOS / Linux
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
-3.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+1. Clone the repository
+```bash
+git clone https://github.com/014-Jayal/LUGAI-Adversarial-Defense.git
+cd LUGAI-Adversarial-Defense
+```
 
-### Step 2: Prepare Data
-Run the `data_utils.py` script to download and process the MNIST dataset.
+2. Create and activate a virtual environment
+```bash
+# Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+# macOS / Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+4. Prepare the dataset (download and preprocess MNIST)
 ```bash
 python data_utils.py
+```
+
+5. Train models
+```bash
+# Train the baseline CNN classifier
+python train_baseline.py
+
+# Train the denoising autoencoder (DAE) used for purification
+python train_denoising_autoencoder.py
+```
+
+6. Evaluate attacks and purification
+```bash
+# Evaluate baseline and attacked accuracy
+python evaluate_attacks.py
+
+# Evaluate purification (requires trained DAE)
+python evaluate_purification.py
+```
+
+7. Run the interactive demo
+```bash
+streamlit run app.py
+```
+Open the URL shown by Streamlit (typically http://localhost:8501) in a browser.
+
+Reproducing Results and Experiments
+----------------------------------
+Use the evaluation and visualization scripts to reproduce results:
+```bash
+python evaluate_attacks.py
+python evaluate_detection.py
+python evaluate_purification.py
+python visualize_attacks.py
+python visualize_purification.py
+```
+
+Repository structure
+--------------------
+```
+LUGAI-Adversarial-Defense/
+├── app.py
+├── config.py
+├── data_utils.py
+├── model_zoo.py
+├── attacks.py
+├── defense.py
+├── visualize.py
+├── train_baseline.py
+├── train_autoencoder.py
+├── train_denoising_autoencoder.py
+├── evaluate_attacks.py
+├── evaluate_detection.py
+├── evaluate_purification.py
+├── visualize_attacks.py
+├── visualize_purification.py
+├── data/
+├── models/
+├── results/
+│   └── figures/
+├── notebooks/
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
+
+Technologies Used
+-----------------
+- **Programming Language:** Python 3.11  
+- **Frameworks/Libraries:** PyTorch, Torchattacks, Streamlit  
+- **Data:** MNIST dataset  
+- **Utilities:** NumPy, Matplotlib, Seaborn, Scikit-learn, Tqdm  
+- **Version Control:** Git & GitHub  
+
+Notes and Recommendations
+-------------------------
+- Do not commit large datasets or model checkpoint files to the repository. Use `.gitignore` or Git LFS for large artifacts.
+- For sharing pre-trained weights, provide a Google Drive or GitHub Release link.
+
