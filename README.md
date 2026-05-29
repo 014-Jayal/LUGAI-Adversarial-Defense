@@ -1,14 +1,35 @@
-
+<h1 align="center">
 LUGAI — Latent Uncertainty Guided Adversary Intervention
-=======================================================
+</h1>
 
-Project Group No: 30  
-Scholars:  
-- **Jayal Shah** — [LinkedIn](https://www.linkedin.com/in/jayal-shah04/)  
-- **Sakshi Makwana** — [LinkedIn](https://www.linkedin.com/in/sakshii125/)  
+<p align="center">
+A Real-Time Self-Healing Framework for Adversarial Defense in Deep Neural Networks
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11-blue?logo=python">
+  <img src="https://img.shields.io/badge/PyTorch-Deep%20Learning-red?logo=pytorch">
+  <img src="https://img.shields.io/badge/Domain-AI%20Security-green">
+  <img src="https://img.shields.io/badge/Dataset-MNIST-orange">
+  <img src="https://img.shields.io/badge/Defense-Self--Healing-purple">
+  <img src="https://img.shields.io/badge/Attacks-FGSM%20%7C%20PGD%20%7C%20DeepFool-red">
+  <img src="https://img.shields.io/badge/UI-Streamlit-FF4B4B?logo=streamlit">
+  <img src="https://img.shields.io/badge/Clean%20Accuracy-99.28%25-blue">
+  <img src="https://img.shields.io/badge/Recovery-91.8%25-brightgreen">
+  <img src="https://img.shields.io/badge/Status-Completed-success">
+</p>
+
+---
+
+**Project Group No: 30**
+
+### Scholars
+
+- **Jayal Shah** — [LinkedIn](https://www.linkedin.com/in/jayal-shah04/)
+- **Sakshi Makwana** — [LinkedIn](https://www.linkedin.com/in/sakshii125/)
 - **Mayank Jangid** — [LinkedIn](https://www.linkedin.com/in/mayank-jangid-0a5207359/)
 
-Supervisor: **Dr. Sanjay B. Sonar**
+**Supervisor:** Dr. Sanjay B. Sonar
 
 Demo
 ----
